@@ -5,7 +5,7 @@
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-**🌐 Live Application:** [Insert Deployed Link Here](https://your-deployed-link-here.com)
+**🌐 Live Application:** [Insert Deployed Link Here]([https://your-deployed-link-here.com](https://rankcheck-ai.vercel.app/))
 
 > **Project Objective:** Architect an Answer Engine Optimization (AEO) diagnostic tool that concurrently queries multiple Large Language Models (LLMs) to generate a competitive benchmarking report for brands.
 
