@@ -45,7 +45,7 @@ function App() {
     setInsightData(null);
 
     try {
-      const networkResponse = await axios.post('http://localhost:5000/api/analyze', {
+      const networkResponse = await axios.post('https://rankcheck-ai.onrender.com/api/analyze', {
         query: searchSubject,
         brand: targetBrand
       });
