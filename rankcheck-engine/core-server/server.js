@@ -45,7 +45,7 @@ const fetchMistralRanks = async (userSearch) => {
 };
 
 const fetchGeminiRanks = async (userSearch) => {
-    const coreModel = geminiProvider.getGenerativeModel({ model: "gemini-2.5-flash" });
+    const coreModel = geminiProvider.getGenerativeModel({ model: "gemini-1.5-flash" });
     const systemDirective = "You are an e-commerce assistant. Provide the top 3 recommended product brands for the user query. Output strictly as a comma-separated list of brand names. Query: ";
     const rawGeminiResponse = await coreModel.generateContent(systemDirective + userSearch);
     return rawGeminiResponse.response.text();
@@ -60,7 +60,7 @@ const evaluateBrandPresence = (aiText, brandTarget) => {
 };
 
 const generateStrategicInsights = async (searchSubject, targetBrand, rawExtraction) => {
-    const coreModel = geminiProvider.getGenerativeModel({ model: "gemini-2.5-flash" });
+    const coreModel = geminiProvider.getGenerativeModel({ model: "gemini-1.5-flash" });
     const analysisPrompt = `
     You are an analytical brand strategist.
     Query: "${searchSubject}". Target Brand: "${targetBrand}".
